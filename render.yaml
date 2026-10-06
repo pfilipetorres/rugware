@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: rugengine-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python rugengine_bot.py
+    healthCheckPath: /
